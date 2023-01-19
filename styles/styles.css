@@ -1,0 +1,163 @@
+:root {
+    /* colores */
+
+    /* primarios */
+    --dark_cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+
+    /* secundarios */
+    --very_dark_blue: hsl(212, 21%, 14%);
+    --dark_grayish_blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+
+    /* fuentes */
+    --fuente_principal: 'Montserrat', sans-serif;
+    --fuente_secundaria: 'Fraunces', serif;
+
+}
+
+body {
+    background-color: var(--cream);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor {
+    background-color: var(--white);
+    border-radius: 10px;
+    min-width: 370px;
+    width: 360px;
+    height: 590px;
+    display: flex;
+    margin: 0px;
+    gap: 10px;
+}
+
+.imagen {
+    background-size: cover;
+    width: 100%;
+    height: 40%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.imagen-perfume {
+    background-image: url("../img/image-product-mobile.jpg");
+}
+
+
+/* Estilo y color de fuente */
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: lighter;
+    font-size: 12px;
+}
+
+h1,
+.parrafo__texto,
+.precio__inicial,
+a {
+    font-family: var(--fuente_principal);
+}
+
+h1,
+.parrafo__texto,
+.precio__inicial {
+    color: var(--dark_grayish_blue);
+}
+
+h2,
+.precio__oferta {
+    font-family: var(--fuente_secundaria);
+
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.parrafo__texto {
+    font-size: 15px;
+}
+
+.precio__oferta {
+    color: var(--dark_cyan);
+    font-size: 30px;
+}
+
+.precio__inicial {
+    text-decoration: line-through;
+    font-size: 13px;
+}
+
+/* a */
+
+h1,
+h2,
+.parrafo__texto,
+.precio,
+.contenedor__boton {
+    margin: 16px 8%;
+}
+
+.contenedor__boton {
+    display: flex;
+    justify-content: center;
+    background-color: var(--dark_cyan);
+    border: none;
+    color: var(--white);
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 15px 0px;
+    margin-top: 20px;
+    gap: 10px;
+    cursor: pointer;
+
+}
+
+.precio {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+}
+
+@media (min-width: 580px) {
+
+    body {
+        background-color: var(--cream);
+        
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    .contenedor {
+        background-color: var(--white);
+        border-radius: 10px;
+        width: 550px;
+        height: 360px;
+        display: flex;
+        margin: 0px;
+        gap: 10px;
+    }
+
+    .imagen-perfume {
+        background-image: url("../img/image-product-desktop.jpg");
+    }
+
+    .imagen {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px 0px 0px 10px ;
+    }
+
+    .carta {
+        display: flex;
+    }
+}
